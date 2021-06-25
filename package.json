@@ -1,0 +1,13 @@
+{
+  "name": "justpark-fe-test",
+  "version": "1.0.0",
+  "description": "Test task for frontend applicants",
+  "main": "index.js",
+  "author": "Jack",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
