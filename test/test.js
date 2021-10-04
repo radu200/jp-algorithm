@@ -3,7 +3,10 @@ const assert = require('assert');
 const stringToArray = (string) => string.split(' ');
 
 const sockMerchant = (inputCount, input) => {
-  if (inputCount && input) {
+    if (!inputCount && !input) {
+         return 0;
+    }
+  
     const sockStock = {};
     const socks = stringToArray(input);
     let pairSum = 0;
@@ -21,8 +24,6 @@ const sockMerchant = (inputCount, input) => {
     }
 
     return pairSum;
-  }
-  return 0;
 };
 
 const testData = [
